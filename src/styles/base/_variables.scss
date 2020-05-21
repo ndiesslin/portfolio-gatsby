@@ -1,0 +1,29 @@
+// Colors
+$black: #323132;
+$white: #EFEFEF;
+$dark-blue: #00416A;
+$light-blue: #B7DCEE;
+$orange: #F16524;
+$blue: #0000FF;
+
+// Fonts
+$merriweather: 'Merriweather Sans', sans-serif;
+$bitter: 'Bitter', serif;
+
+// Grid breakpoints
+$breakpoints: (
+  'small':  576px,
+  'medium': 768px,
+  'large':  1200px
+) !default;
+
+// Sizing
+$border: 5px;
+$border-radius: 5px;
+
+// Animations
+$animation-duration: 0.3s;
+
+// Base margins
+$base-top-margin: pxToRem(32);
+$base-bottom-margin: pxToRem(16);

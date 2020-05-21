@@ -1,0 +1,33 @@
+.btn, a.btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0 pxToRem(16);
+  padding: pxToRem(12) pxToRem(24);
+  width: 100%;
+  background-color: $black;
+  text-align: center;
+  font-size: pxToRem(24);
+  color: $white;
+  border-radius: $border-radius;
+  border: solid 1px $black;
+  transition: background, color, border-color $animation-duration;
+
+  &:hover, &:active, &:focus {
+    background-color: $white;
+    color: $black;
+    border-color: $black;
+  }
+
+  @include breakpoint('medium') {
+    width: auto;
+    margin: 0 pxToRem(16) pxToRem(16) 0;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &--border-color-white {
+    border-color: white;
+  }
+}

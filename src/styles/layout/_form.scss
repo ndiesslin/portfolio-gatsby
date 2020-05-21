@@ -1,0 +1,48 @@
+::placeholder {
+  color: $white;
+}
+
+.form-inputs:focus,
+.text-area:focus {
+  background-color: $dark-blue
+}
+
+.form-inputs {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 5px;
+  outline: none;
+  background-color: $black;
+  border-radius: 5px;
+  border-color: $white;
+  border-width: 1px;
+  border-style: solid;
+  color: $white
+}
+
+.text-area {
+  resize: none;
+  height: 200px;
+  background-color: $black;
+  border-color: $white;
+  border-width: 1px;
+  border-style: solid;
+  color: $white
+}
+
+p.error,
+p.success {
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid
+}
+
+p.error {
+  background: #ffc0c0;
+  color: #900
+}
+
+p.success {
+  background: #b3ff69;
+  color: #4fa000
+}

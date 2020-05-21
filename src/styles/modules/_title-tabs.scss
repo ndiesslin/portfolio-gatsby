@@ -1,0 +1,10 @@
+.title-tabs {
+  padding: pxToRem(20) pxToRem(40);
+  display: inline-block;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+
+  @include breakpoint('medium') {
+    padding: pxToRem(45) pxToRem(75);
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container--small {
+  max-width: 650px;
+}
+
+.container--medium {
+  max-width: 900px;
+}
+
+.container-fluid {
+  width: 100%;
+}

@@ -1,0 +1,5 @@
+.bio {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: pxToRem(16);
+}

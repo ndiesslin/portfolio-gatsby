@@ -8,7 +8,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
+        blogs: allMarkdownRemark(
+          filter: {
+            fields: { collection: { eq: "blog" } }
+          }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -33,25 +36,21 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges
+  const posts = result.data.blogs.edges
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
     const collection = post.node.fields.collection
-
-    // If the collection is a blog, create a page for this, otherwise it's just node data
-    if (collection == 'blog') {
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
-    }
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    })
   })
 }
 

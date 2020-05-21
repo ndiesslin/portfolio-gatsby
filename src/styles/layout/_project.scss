@@ -1,0 +1,25 @@
+.project {
+  border-top: solid 1px $black;
+  padding: pxToRem(40) 0;
+  //
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media only screen and (min-width: 768px) {
+    padding: pxToRem(80) 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &:first-child {
+    border-top: solid;
+    border-top-width: 0;
+  }
+
+  &--image-right {
+    direction: rtl;
+
+    .project-text {
+      direction: ltr;
+    }
+  }
+}

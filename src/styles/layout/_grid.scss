@@ -1,0 +1,11 @@
+.display-grid {
+  display: grid;
+}
+
+.grid-template-columns-1-1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-column-gap-60 {
+  grid-column-gap: pxToRem(60);
+}

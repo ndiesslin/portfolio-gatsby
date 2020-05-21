@@ -1,0 +1,14 @@
+.gatsby-highlight { 
+  margin-bottom: $base-bottom-margin;
+
+  pre[class*="language-"] {
+    margin: 0;
+    border-radius: 0;
+    border-left: solid $border $orange;
+  }
+}
+
+code[class*="language-"], 
+pre[class*="language-"] {
+  white-space: pre-wrap !important;
+}

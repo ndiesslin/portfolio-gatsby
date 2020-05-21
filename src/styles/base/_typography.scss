@@ -1,0 +1,125 @@
+// Base 
+html {
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: $white;
+  color: $black;
+}
+
+// Headings
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  display: block;
+  font-family: $bitter;
+  margin: $base-top-margin 0 $base-bottom-margin;
+}
+
+h1 {
+  font-size: pxToRem(40);
+
+  @include breakpoint(medium) {
+    font-size: pxToRem(68);
+  }
+}
+
+h2 {
+  font-size: pxToRem(33);
+
+  @include breakpoint(medium) {
+    font-size: pxToRem(50);
+  }
+}
+
+h3 {
+  font-size: pxToRem(27);
+
+  @include breakpoint(medium) {
+    font-size: pxToRem(38);
+  }
+}
+
+h4 {
+  font-size: pxToRem(23);
+
+  @include breakpoint(medium) {
+    font-size: pxToRem(28);
+  }
+}
+
+h5 {
+  font-size: pxToRem(19);
+
+  @include breakpoint(medium) {
+    font-size: pxToRem(21);
+  }
+}
+
+h6 {
+  font-size: pxToRem(16);
+}
+
+p {
+  display: block;
+  font-size: pxToRem(16);
+  line-height: 1.75;
+  margin: 0 0 $base-bottom-margin;
+}
+
+a {
+  color: $blue;
+
+  &:hover, 
+  &:focus, 
+  &:visited {
+    color: $blue;
+  }
+}
+
+blockquote {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: $base-bottom-margin;
+  padding: 0.5rem 2rem;
+  border-left: solid $border $orange;
+  font-family: $bitter;
+
+  p {
+    margin: 0;
+  }
+}
+
+.font-size-14 {
+  font-size: pxToRem(14);
+}
+
+// Font families
+.font-family-serif {
+  font-family: $bitter;
+}
+
+.font-family-sanserif {
+  font-family: $merriweather;
+}
+
+// Font colors
+.color-black {
+  color: $black !important;
+}
+
+.color-white {
+  color: $white !important;
+}
+
+// Font weights
+.font-weight-normal {
+  font-weight: normal;
+}

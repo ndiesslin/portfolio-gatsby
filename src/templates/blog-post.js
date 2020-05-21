@@ -8,49 +8,40 @@ import SEO from "../components/seo"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
+  const pageTitle = post.frontmatter.title
+  const pageDescription = post.frontmatter.description || post.excerpt
   const { previous, next } = pageContext
+  const classes = "container container--small"
+  const url = typeof window !== 'undefined' ? window.location.href : '';
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} classes={classes}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        title={pageTitle}
+        description={pageDescription}
       />
       <article>
-        <header>
-          <h1
-            style={{
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-            This is the title
+        <header class={'text-align-center'}>
+          <h1>
+            {pageTitle}
           </h1>
-          <p
-            style={{
-              display: `block`
-            }}
-          >
-            This is the date
+          <p>
             {post.frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr/>
-        <footer>
-          <Bio />
-        </footer>
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <a class="twitter-share-button"
+          href={`https://twitter.com/intent/tweet?text=${pageDescription}&url=${url}`}>
+          Share article on Twitter
+        </a>
+        <hr/>
+        <Bio />
       </article>
 
       <nav>
         <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
+          class={'blog-nav text-align-center'}
         >
           <li>
             {previous && (
@@ -58,6 +49,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 ← {previous.frontmatter.title}
               </Link>
             )}
+          </li>
+          <li>
+            <Link to="/blog">
+              Back to blog
+            </Link>
           </li>
           <li>
             {next && (

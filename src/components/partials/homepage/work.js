@@ -12,11 +12,13 @@ const Work = ({ work }) => {
   }
 
   return (
-    <section id="projects">
-      <h2 class="title-tabs color-white" id="work-tab">
-        Work
-      </h2>
-      <div id="project-container">
+    <section>
+      <div class="text-align-center">
+        <h2 class="title-tabs background-color-black color-white">
+          Work
+        </h2>
+      </div>
+      <div class="container">
         {work.map(({ node }, index) => {
           const title = node.frontmatter.title
           const image_url = node.frontmatter.image_url
@@ -26,7 +28,7 @@ const Work = ({ work }) => {
           const project_image_order = isOdd(index) ? 'project--image-right' : '';
 
           return (
-            <article class={'project ' + project_image_order}>
+            <article class={'project grid-column-gap-60 ' + project_image_order}>
               {/* Make sure image size is exact */}
               {/* <img alt="PL360 Preview" class={image_float} src={image_url.publicURL} title="PL360 Preview"/> */}
               <Img 
@@ -37,13 +39,14 @@ const Work = ({ work }) => {
                 />
               {/* <Img fixed={data.file.childImageSharp.fixed} /> */}
               <section class="project-text">
-                <h3>
+                <h3 class={'font-family-sanserif'}>
                   {title}
                 </h3>
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description,
                   }}
+                  class={'margin-bottom-32'}
                 />
                 <LinkSection 
                   node={node}
@@ -52,6 +55,7 @@ const Work = ({ work }) => {
             </article>
           )
         })}
+        <hr class={'margin-top-0'}/>
       </div>
     </section>
   )
@@ -66,10 +70,10 @@ const LinkSection = ({ node }) => {
   if (link_2_link) {
     return (
       <div>
-        <Link to={link_1_link}>
+        <Link to={link_1_link} class={'btn'}>
           {link_1_copy}
         </Link>
-        <Link to={link_2_link}>
+        <Link to={link_2_link} class={'btn'}>
           {link_2_copy}
         </Link>
       </div>
@@ -78,7 +82,7 @@ const LinkSection = ({ node }) => {
   else {
     return (
       <div>
-        <Link to={link_1_link}>
+        <Link to={link_1_link} class={'btn'}>
           {link_1_copy}
         </Link>
       </div>

@@ -1,0 +1,16 @@
+.blog-nav {
+  margin-top: 0;
+  margin-bottom: pxToRem(32);
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0;
+
+  @include breakpoint('medium') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  li {
+    margin-bottom: pxToRem(16);
+  }
+}

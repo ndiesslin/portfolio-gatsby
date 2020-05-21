@@ -6,4 +6,4 @@ import "typeface-merriweather-sans"
 import "./src/styles/global.scss"
 
 // Code highlighting
-require("prismjs/themes/prism-solarizedlight.css")
+require("prismjs/themes/prism-okaidia.css")

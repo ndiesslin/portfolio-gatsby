@@ -1,0 +1,8 @@
+.guide-color {
+  display: inline-block;
+  width: auto;
+  max-height: 50px;
+  margin: 0 pxToRem(6) $base-bottom-margin;
+  border-radius: 50px;
+  padding: pxToRem(16) pxToRem(24);
+}

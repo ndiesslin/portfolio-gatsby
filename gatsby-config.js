@@ -6,7 +6,7 @@ module.exports = {
       summary: `Pizza acrobat 🍕, typographer, gardener, bicyclist, juggler, senior developer, web designer, all around whittler of the web.`,
     },
     description: `This site is for the portfolio work and blog of Nicholas Diesslin, a Web Developer from Minneapolis Minnesota.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://ndiesslin.com`,
     social: {
       twitter: `ndiesslin`,
     },
@@ -48,7 +48,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 650,
             },
           },
           `gatsby-remark-prismjs`,

@@ -3,56 +3,51 @@
  */
 
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
   var d = new Date();
   var n = d.getFullYear();
 
   return (
-    <footer>
-      <h2 class="title-tabs" id="contact-tab">
-        Contact
-      </h2>
-      <div id="contact">
-        <div id="social-icons">
-          <a class="social twitter" href="https://twitter.com/ndiesslin">
-            <span class="visuallyhidden">Twitter</span>
-          </a>
-          <a class="social linkedin" href="https://www.linkedin.com/in/nicholasdiesslin">
-            <span class="visuallyhidden">Linkedin</span>
-          </a>
-          <a class="social behance" href="https://www.behance.net/diesslin">
-            <span class="visuallyhidden">Behance</span>
-          </a>
-        </div>
-        <form method="post" action="">
-          <input class="form-inputs" type="text" required placeholder="name" name="name" id="name" value=""/>
-          <input class="form-inputs" type="email" required placeholder="email" name="email" id="email" value=""/>
-          <textarea class="form-inputs text-area" required placeholder="message" name="comments" id="message"></textarea>
-          <input class="submit" type="submit" name="submit" value="send email"/>
-        </form>
+    <footer class="background-color-black">
+      <div class="text-align-center padding-16">
+        <a class="social social--twitter" href="https://twitter.com/ndiesslin">
+          <span class="visuallyhidden">Twitter</span>
+        </a>
+        <a class="social social--linkedin" href="https://www.linkedin.com/in/nicholasdiesslin">
+          <span class="visuallyhidden">Linkedin</span>
+        </a>
+        <a class="social social--behance" href="https://www.behance.net/diesslin">
+          <span class="visuallyhidden">Behance</span>
+        </a>
       </div>
-      <div id="bottom-nav">
-        <ul id="bottom-nav-left">
-          <li>Nicholas Diesslin {n}</li>
-        </ul>
-        <ul>
-          <li>
-            <a href="docs/vCard.vcf" target="_blank">
-              vCard
-            </a>
-          </li>
-          <li>
-            <a href="docs/resume.pdf" target="_blank">
-              resume
-            </a>
-          </li>
-          <li>
-            <a href="docs/documentation.pdf" target="_blank">
-              site documentation
-            </a>
-          </li>
-        </ul>
+      <div class="background-color-white">
+        <div class="container display-grid grid-template-columns-1-1">
+          <ul class="font-size-14 padding-top-8 padding-bottom-8 margin-0 list-unstyled">
+            <li>Nicholas Diesslin {n}</li>
+          </ul>
+          <ul class="font-size-14 padding-top-8 padding-bottom-8 margin-0 list-unstyled text-align-right">
+            <Link to="/blog" class={'margin-right-8 display-inline-block'}>
+              blog
+            </Link>
+            <li class="margin-right-8 display-inline-block">
+              <a href="docs/vCard.vcf" target="_blank">
+                vCard
+              </a>
+            </li>
+            <li class="margin-right-8 display-inline-block">
+              <a href="docs/resume.pdf" target="_blank">
+                resume
+              </a>
+            </li>
+            <li class="display-inline-block">
+              <a href="docs/documentation.pdf" target="_blank">
+                site documentation
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   )

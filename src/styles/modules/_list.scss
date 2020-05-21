@@ -1,0 +1,14 @@
+ol, ul {
+  margin-top: 0;
+  margin-bottom: $base-bottom-margin;
+  line-height: 1.75;
+
+  ol, ul, p {
+    margin: 0;
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}

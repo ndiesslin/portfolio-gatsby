@@ -1,11 +1,12 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Intro from "../components/partials/homepage/intro"
 import About from "../components/partials/homepage/about"
 import Work from "../components/partials/homepage/work"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import BlogList from "../components/partials/blog-list"
 
 const PortfolioIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,8 +17,24 @@ const PortfolioIndex = ({ data, location }) => {
       <Intro />
       <About />
       <Work
-        work={data.allMarkdownRemark.edges}
+        work={data.work.edges}
       />
+      <section class="margin-bottom-32">
+        <div class="container container--small">
+          <div>
+            <h2 class="text-align-center">
+              <Link to="/blog">
+                Blog
+              </Link>
+            </h2>
+          </div>
+          <div>
+          <BlogList
+            blogs={data.blogs.edges}
+          />
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
@@ -31,7 +48,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    work: allMarkdownRemark(
       filter: {
         fields: { collection: { eq: "work" } }
       }
@@ -49,7 +66,7 @@ export const pageQuery = graphql`
             image_url {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 450) {
+                fluid(maxWidth: 550) {
                   sizes
                   aspectRatio
                   src
@@ -62,6 +79,26 @@ export const pageQuery = graphql`
             link_1_link
             link_2_copy
             link_2_link
+            description
+          }
+        }
+      }
+    }
+    blogs: allMarkdownRemark(
+      filter: {
+        fields: { collection: { eq: "blog" } }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
             description
           }
         }
