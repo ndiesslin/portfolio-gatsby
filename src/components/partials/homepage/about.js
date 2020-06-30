@@ -10,7 +10,7 @@ const About = () => {
       <div class="container container--medium">
         <h2 class="about-text color-white margin-0 font-weight-normal">
           My name is <strong id="nicholas">Nicholas&nbsp;Diesslin</strong>,<br/>
-          I’m a <strong>web designer / developer / other thing</strong> from <strong>Minnesota</strong>. I like to build, make, and think about things!
+          I’m a <strong>web developer / web designer / generalist</strong> from <strong>Minnesota</strong>. I like to build, make, and think about things!
         </h2>
       </div>
     </section>

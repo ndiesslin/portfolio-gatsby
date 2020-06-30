@@ -89,6 +89,7 @@ export const pageQuery = graphql`
         fields: { collection: { eq: "blog" } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
     ) {
       edges {
         node {

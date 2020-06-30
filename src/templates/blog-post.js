@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const pageTitle = post.frontmatter.title
   const pageDescription = post.frontmatter.description || post.excerpt
   const { previous, next } = pageContext
-  const classes = "container container--small"
+  const classes = "container"
   const url = typeof window !== 'undefined' ? window.location.href : '';
 
   return (
@@ -26,44 +26,51 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {pageTitle}
           </h1>
           <p>
-            {post.frontmatter.date}
+            <em>
+              {post.frontmatter.date}
+            </em>
           </p>
         </header>
-        <hr/>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <a class="twitter-share-button"
-          href={`https://twitter.com/intent/tweet?text=${pageDescription}&url=${url}`}>
-          Share article on Twitter
-        </a>
-        <hr/>
-        <Bio />
-      </article>
 
-      <nav>
-        <ul
-          class={'blog-nav text-align-center'}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            <Link to="/blog">
-              Back to blog
-            </Link>
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+        <div class={'container container--small'}>
+          <hr/>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <a class="twitter-share-button"
+            href={`https://twitter.com/intent/tweet?text=${pageDescription}&url=${url}`}>
+            Share article on Twitter
+          </a>
+          
+          <hr/>
+
+          <Bio />
+
+          <nav>
+            <ul
+              class={'blog-nav text-align-center'}
+            >
+              <li>
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                <Link to="/blog">
+                  Back to blog
+                </Link>
+              </li>
+              <li>
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </article>
     </Layout>
   )
 }
