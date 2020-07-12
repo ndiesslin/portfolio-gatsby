@@ -1,8 +1,12 @@
 ---
 title: Style Guide
-date: "2020-05-12"
+date: "2020-03-12"
 description: This is an example web style guide that covers the ndiesslin website.
 ---
+
+## Intro:
+
+When creating brands, quality brands will create a brand style guide; this is the same for websites, quality websites will create a web style guide. The purpose of this is to help new developers understand the components of the brand and how to add new components of the brand. 
 
 ## Colors:
 Primary:

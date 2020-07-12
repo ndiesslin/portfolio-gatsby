@@ -28,20 +28,22 @@ const Footer = () => {
             <li>Nicholas Diesslin {n}</li>
           </ul>
           <ul class="font-size-14 padding-top-8 padding-bottom-8 margin-0 list-unstyled text-align-right">
-            <Link to="/blog" class={'margin-right-8 display-inline-block'}>
-              blog
-            </Link>
-            <li class="margin-right-8 display-inline-block">
+            <li class="margin-bottom-16 display-inline-block">
+              <Link to="/blog">
+                blog
+              </Link>
+            </li>
+            <li class="margin-bottom-16 margin-left-24 display-inline-block">
               <a href="docs/vCard.vcf" target="_blank">
                 vCard
               </a>
             </li>
-            <li class="margin-right-8 display-inline-block">
+            <li class="margin-bottom-16 margin-left-24 display-inline-block">
               <a href="docs/resume.pdf" target="_blank">
                 resume
               </a>
             </li>
-            <li class="display-inline-block">
+            <li class="margin-bottom-16 margin-left-24 display-inline-block">
               <a href="docs/documentation.pdf" target="_blank">
                 site documentation
               </a>

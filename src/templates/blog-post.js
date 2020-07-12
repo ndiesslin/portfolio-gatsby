@@ -25,11 +25,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <h1>
             {pageTitle}
           </h1>
-          <p>
+          {/* If I ever want to display the date, maybe when I have more posts */}
+          {/* <p>
             <em>
               {post.frontmatter.date}
             </em>
-          </p>
+          </p> */}
         </header>
 
         <div class={'container container--small'}>

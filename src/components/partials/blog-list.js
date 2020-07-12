@@ -17,7 +17,8 @@ const BlogList = ({ blogs }) => {
                 {title}
               </Link>
             </h3>
-            <small><em>{node.frontmatter.date}</em></small>
+            {/* If I ever want to display the date, maybe when I have more posts */}
+            {/* <small><em>{node.frontmatter.date}</em></small> */}
           </header>
           <section>
             <p

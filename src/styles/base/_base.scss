@@ -82,6 +82,10 @@ hr {
   margin: 0;
 }
 
+.margin-bottom-16 {
+  margin-bottom: pxToRem(16) !important;
+}
+
 .margin-bottom-32 {
   margin-bottom: pxToRem(32) !important;
 }
@@ -90,8 +94,8 @@ hr {
   margin-top: pxToRem(32);
 }
 
-.margin-right-8 {
-  margin-right: pxToRem(8);
+.margin-left-24 {
+  margin-left: pxToRem(24);
 }
 
 // Paddings

@@ -1,12 +1,12 @@
 ---
 title: MJML vs Foundation for Emails(ink)
-date: "2020-05-19"
+date: "2020-04-19"
 description: An overview of MJML compared to Foundation for Emails and an example use of each.
 ---
 
 ## intro:
 
-Two crucial aspects of marketing that we deal with on a daily basis here at Augeo Marketing are email creation and email campaigns. Email campaigns not only generate returns to your business, but give your company more visibility. 
+Two crucial aspects of marketing that we deal with on a daily basis are email creation and email campaigns. Email campaigns not only generate returns to your business, but give your company more visibility. 
 
 ### Problem:
 
@@ -14,11 +14,11 @@ The problem that everyone faces in email marketing is that each email client has
 
 ### Solution:
 
-In this article we will discuss MJML and Foundation for Emails(formerly named ink) and what the benefits of each solution are. This article will touch on the syntax and variances to both MJML and Foundation for Emails. We will also conclude with our suggested solution. If you are interested in following along, we have created a repo [here](https://bitbucket.org/ndiesslin/mjml-vs-foundation-for-emails-2/overview) with an example email.
+In this article I will discuss MJML and Foundation for Emails(formerly named ink) and what the benefits of each solution are. This article will touch on the syntax and variances to both MJML and Foundation for Emails. I will also conclude with our suggested solution. If you are interested in following along, [I have created a repo here](https://github.com/ndiesslin/mjml-vs-foundation-for-emails) with an example email.
 
 ### Intro to MJML and Foundation for Emails:
 
-[MJML](https://mjml.io/) is an email framework that was originally created by a team of developers at [mailjet](https://www.mailjet.com/). MJML features a templating language, that is geared to make email creation easier. MJML includes an IDE along with many different templates and code modules for different common email sections.
+MJML](https://mjml.io/) is an email framework that was originally created by a team of developers at [mailjet](https://www.mailjet.com/). MJML features a templating language, that is geared to make email creation easier. MJML includes an IDE along with many different templates and code modules for different common email sections.
 
 [Foundation for Emails](https://foundation.zurb.com/emails/docs/index.html) is an email framework created by the team at Foundation, a front-end framework very similar to Bootstrap. Foundation for Emails features a templating language called inky that has a simplified syntax. Foundation for Emails is used through a CLI (Command Line Interface), and also features different example templates and common email sections. 
 
@@ -30,9 +30,9 @@ To install Foundation for Emails, the only option currently is the CLI. Foundati
 
 ## The Syntax:
 
-We have created a demo for showing off both MJML and Foundation for Emails, feel free to [checkout the repo here](https://bitbucket.org/ndiesslin/mjml-vs-foundation-for-emails-2/overview). In this example email we will compare the syntax needed from both MJML and Foundation for Emails. For the example email I want a simple hero image, a title, intro copy, a two column section, a CTA, and a footer. We typically get a variety of requests from clients, but this will give us a good base to test both with. This is the mockup of how we want our email to look, it’s pretty awesome:
+I have created a demo for showing off both MJML and Foundation for Emails, feel free to [checkout the repo here](https://github.com/ndiesslin/mjml-vs-foundation-for-emails). In this example email we will compare the syntax needed from both MJML and Foundation for Emails. For the example email I want a simple hero image, a title, intro copy, a two column section, a CTA, and a footer. I typically get a variety of requests from clients, but this will give us a good base to test both with. This is the mockup of how we want our email to look, it’s pretty awesome:
 
-![Placeholder Image](./salty_egg.jpg)
+![Placeholder Image](./email.png)
 
 Below is a comparison of the syntax snippets from the two column image section in our email, in MJML and Foundation for Emails.
 
@@ -100,7 +100,7 @@ npm run build
 ```
 
 ## Conclusion
-In conclusion, MJML and Foundation for Emails both provide an easier user experience for developers when creating HTML emails. MJML really proves to have the most flexibility and a larger feature set. MJML also has the IDE which is super beneficial to building emails fast. We would really recommend checking them both out to find which works best for you and your team. 
+In conclusion, MJML and Foundation for Emails both provide an easier user experience for developers when creating HTML emails. MJML really proves to have the most flexibility and a larger feature set. MJML also has the IDE which is super beneficial to building emails fast. I would really recommend checking them both out to find which works best for you and your team. 
 
 ## Pro/Con List:
 

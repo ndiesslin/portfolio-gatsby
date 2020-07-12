@@ -3,7 +3,6 @@
  */
 
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Work = ({ work }) => {
@@ -70,21 +69,21 @@ const LinkSection = ({ node }) => {
   if (link_2_link) {
     return (
       <div>
-        <Link to={link_1_link} class={'btn'}>
+        <a href={link_1_link} class={'btn'}>
           {link_1_copy}
-        </Link>
-        <Link to={link_2_link} class={'btn'}>
+        </a>
+        <a href={link_2_link} class={'btn'}>
           {link_2_copy}
-        </Link>
+        </a>
       </div>
     )
   } 
   else {
     return (
       <div>
-        <Link to={link_1_link} class={'btn'}>
+        <a href={link_1_link} class={'btn'}>
           {link_1_copy}
-        </Link>
+        </a>
       </div>
     )
   }
