@@ -7,5 +7,5 @@ image_alt: 'Simple Mobile Rewards Programs Website on computer, tablet, and phon
 link_1_copy: 'Visit Straight Talk Brand'
 link_1_link: 'http://rewards.straighttalk.com/'
 link_2_copy: 'Visit Simple Mobile Brand'
-link_2_link: 'http://rewards.simplemobile.com/e'
+link_2_link: 'http://rewards.simplemobile.com/'
 ---

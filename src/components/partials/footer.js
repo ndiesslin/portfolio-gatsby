@@ -18,6 +18,9 @@ const Footer = () => {
         <a class="social social--linkedin" href="https://www.linkedin.com/in/nicholasdiesslin">
           <span class="visuallyhidden">Linkedin</span>
         </a>
+        <a class="social social--github" href="https://github.com/ndiesslin">
+          <span class="visuallyhidden">Github</span>
+        </a>
         <a class="social social--behance" href="https://www.behance.net/diesslin">
           <span class="visuallyhidden">Behance</span>
         </a>

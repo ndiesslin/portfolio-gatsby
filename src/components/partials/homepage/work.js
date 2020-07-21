@@ -65,28 +65,43 @@ const LinkSection = ({ node }) => {
   const link_1_link = node.frontmatter.link_1_link
   const link_2_copy = node.frontmatter.link_2_copy
   const link_2_link = node.frontmatter.link_2_link
+  const link_document_copy = node.frontmatter.link_document_copy
+  const link_document_link = node.frontmatter.link_document_link
 
-  if (link_2_link) {
-    return (
-      <div>
-        <a href={link_1_link} class={'btn'}>
-          {link_1_copy}
-        </a>
-        <a href={link_2_link} class={'btn'}>
-          {link_2_copy}
-        </a>
-      </div>
-    )
-  } 
-  else {
-    return (
-      <div>
-        <a href={link_1_link} class={'btn'}>
-          {link_1_copy}
-        </a>
-      </div>
+  // Create link section object
+  let link_section = []
+
+  // Append links to object
+  if (link_1_link) {
+    link_section.push(
+      <a href={link_1_link} class={'btn'}>
+        {link_1_copy}
+      </a>
     )
   }
+
+  if (link_2_link) {
+    link_section.push(
+      <a href={link_2_link} class={'btn'}>
+        {link_2_copy}
+      </a>
+    )
+  }
+
+  if (link_document_link) {
+    link_section.push(
+      <a href={link_document_link.publicURL} class={'btn'}>
+        {link_document_copy}
+      </a>
+    )
+  }
+
+  // Return link section
+  return (
+    <div>
+      {link_section}
+    </div>
+  )
 }
 
 export default Work

@@ -79,6 +79,10 @@ export const pageQuery = graphql`
             link_1_link
             link_2_copy
             link_2_link
+            link_document_copy
+            link_document_link {
+              publicURL
+            }
             description
           }
         }
