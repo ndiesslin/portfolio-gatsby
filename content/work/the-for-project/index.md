@@ -6,6 +6,4 @@ image_url: 'mockup.png'
 image_alt: 'The For Project Website on computer, tablet, and phone.'
 link_1_copy: 'Visit Site'
 link_1_link: 'https://web.archive.org/web/20190122034944/https://www.theforproject.com/'
-link_2_copy: 'Style Guide'
-link_2_link: '#'
 ---
