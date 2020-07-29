@@ -6,7 +6,7 @@ description: Thoughts and approaches around planning successful project manageme
 
 ## intro:
 
-Project management is tough, but it doesn't have to be this way. This is a compilation of thoughts and approaches around planning and executing successful project management.
+Project management is tough, but it doesn't have to be. This is a compilation of thoughts and approaches around planning and executing successful project management.
 
 ### Problem:
 
@@ -16,6 +16,7 @@ There are a lot of different problems technical companies and groups face around
 2. Tools guiding the project management process
 3. Misuse of project management tools
 4. Lack of process to guide better project management
+5. Lack of experience around project management
 
 ### Solutions:
 
@@ -34,7 +35,7 @@ This is an example of how you could help define ideas for your project managemen
 
 ### Creating tasks
 
-I orginaly started understanding better tasks when working with team members who were remote, I understood after awhile that tasks need to be created in a way they can be worked on asyncornously by most anyone. When creating tasks this is a list of helpful ideas on some things one might think about:
+I originally started understanding better tasks when working with team members who were remote, I understood after awhile that tasks need to be created in a way they can be worked on asynchronously by most anyone. When creating tasks this is a list of helpful ideas on some things one might think about:
 
 1. Come up with a title naming convention
     1. You will want a format fitting to your projects and team size
@@ -49,19 +50,19 @@ I orginaly started understanding better tasks when working with team members who
 9. Sometimes it might be helpful to provide dialog in tasks to provide context, make sure this isn't what defines the task and this may only provide redundancy from the summary of the task
 10. You may create a main task for a larger project and sub tasks that are required to complete the main task, but each task should be siloed to complete the main task
 
-__Here is an example task:__
+__TODO: Here is an example task:__
 
 ### Creating timelines
 
 In my mind a good timeline can be completed in a realistic situation and if things go wrong. This means there might be buffer, but this is really to provide room for error and a better plan for success.
 
 Here is a list of things that helps craft a better timeline:
-1. Know the requirements, if you don't have all the requirements add more buffer and the caviat that information is missing so the timeline is slightly less reliable and because of this more information should be gathered
+1. Know the requirements, if you don't have all the requirements add more buffer and the note to stakeholders that information is missing so the timeline is slightly less reliable and because of this, more information should be gathered
 2. Have most the tasks defined ahead of time, if you can also have level of efforts for each this will help define the timeline as well
-3. Figure out the timing for most peices and what parts will rely on each other
+3. Figure out the timing for most pieces and what parts will rely on each other
 4. Start putting together a weekly schedule for the main tasks adding space for unknowns and potential tasks to be mixed in
 5. Know that sometimes a realistic timeline might seem a little longer than what you'd expect, but this helps you either meet or exceed the deadline and that's ultimately the goal of a timeline
 
-__Example Timeline:__
+__TODO: Example Timeline:__
 
 
