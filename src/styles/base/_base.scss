@@ -26,14 +26,10 @@ a, a:visited {
 }
 
 // Selection
-::-moz-selection {
-  background: $light-blue;
-  text-shadow: none
-}
-
 ::selection {
-  background: $light-blue;
-  text-shadow: none
+  background: $black;
+  text-shadow: none;
+  color: $white;
 }
 
 // Scrollbar
