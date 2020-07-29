@@ -82,16 +82,20 @@ hr {
   margin-bottom: pxToRem(16) !important;
 }
 
-.margin-bottom-32 {
-  margin-bottom: pxToRem(32) !important;
+.margin-left-24 {
+  margin-left: pxToRem(24);
 }
 
 .margin-top-32 {
   margin-top: pxToRem(32);
 }
 
-.margin-left-24 {
-  margin-left: pxToRem(24);
+.margin-bottom-32 {
+  margin-bottom: pxToRem(32) !important;
+}
+
+.margin-bottom-72 {
+  margin-bottom: pxToRem(72) !important;
 }
 
 // Paddings
@@ -105,6 +109,10 @@ hr {
 
 .padding-16 {
   padding: pxToRem(16);
+}
+
+.padding-top-32 {
+  padding-top: pxToRem(32);
 }
 
 // Backgrounds
