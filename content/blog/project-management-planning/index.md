@@ -2,6 +2,7 @@
 title: Project Management Planning
 date: "2020-05-19"
 description: Thoughts and approaches around planning successful project management.
+draft: true
 ---
 
 ## intro:

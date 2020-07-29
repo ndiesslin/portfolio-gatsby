@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
+    'gatsby-plugin-draft',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
