@@ -4,6 +4,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import skillsetList from '../skillset'
 
 const Intro = () => {
   const data = useStaticQuery(graphql`
@@ -19,10 +20,11 @@ const Intro = () => {
     }
   `)
   const { author } = data.site.siteMetadata
+  const skillset = skillsetList.join(', ');
 
   return (
     <section class="intro">
-      <h1 class="visuallyhidden">{author.name} - {author.summary}</h1>
+      <h1 class="visuallyhidden">{author.name} - {skillset}</h1>
       <div class="intro__logo-container">
         <svg
           version="1.1"

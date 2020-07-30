@@ -2,9 +2,8 @@
  * About component
  */
 
-import React, { Component } from 'react';
-
-const skillsetList = ['web developer', 'web designer', 'generalist', 'dev ops', 'email developer', 'information architect', 'usability developer'];
+import React, { Component } from 'react'
+import skillsetList from '../skillset'
 
 class About extends Component {
   constructor() {
