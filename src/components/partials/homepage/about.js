@@ -30,7 +30,7 @@ class About extends Component {
         <div class="container container--medium">
           <h2 class="about-text color-white margin-0 font-weight-normal">
             My name is <strong id="nicholas">Nicholas&nbsp;Diesslin</strong>,<br/>
-            I’m a <strong>{skillset}</strong> from <strong>Minnesota</strong>. I like to build, make, and think about things!
+            I’m a <strong class="about-text__skills">{skillset}</strong> from <strong>Minnesota</strong>. I like to build, make, and think about things!
           </h2>
         </div>
       </section>

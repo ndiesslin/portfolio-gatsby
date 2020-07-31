@@ -15,4 +15,8 @@
 
 .about-text {
   padding: pxToRem(64) 0;
+
+  &__skills {
+    color: $light-blue;
+  }
 }
