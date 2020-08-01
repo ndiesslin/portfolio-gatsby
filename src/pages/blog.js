@@ -8,7 +8,7 @@ import BlogList from "../components/partials/blog-list"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  const classes = "container container--small margin-bottom-32"
+  const classes = "container container--small"
 
   return (
     <Layout location={location} title={siteTitle} classes={classes}>

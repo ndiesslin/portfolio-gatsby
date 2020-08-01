@@ -19,7 +19,7 @@ const PortfolioIndex = ({ data, location }) => {
       <Work
         work={data.work.edges}
       />
-      <section class="margin-bottom-32">
+      <section class="margin-top-64">
         <div class="container container--small">
           <div>
             <h2 class="text-align-center">

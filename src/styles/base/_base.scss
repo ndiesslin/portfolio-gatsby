@@ -94,6 +94,14 @@ hr {
   margin-bottom: pxToRem(32) !important;
 }
 
+.margin-top-64 {
+  margin-top: pxToRem(64);
+}
+
+.margin-bottom-72 {
+  margin-bottom: pxToRem(72);
+}
+
 // Paddings
 .padding-top-8 {
   padding-top: pxToRem(8);

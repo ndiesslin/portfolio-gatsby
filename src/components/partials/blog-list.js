@@ -7,10 +7,10 @@ import { Link } from "gatsby"
 
 const BlogList = ({ blogs }) => {
   return (
-    blogs.map(({ node }) => {
+    blogs.map(({ node }, i) => {
       const title = node.frontmatter.title || node.fields.slug
       return (
-        <article key={node.fields.slug} class={'margin-bottom-32'}>
+        <article key={node.fields.slug} class={ blogs.length === i + 1 ? 'margin-bottom-72' : 'margin-bottom-32' }>
           <header>
             <h3 class={'margin-0'}>
               <Link to={node.fields.slug}>
