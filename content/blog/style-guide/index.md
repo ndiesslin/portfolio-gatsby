@@ -146,4 +146,11 @@ h2 {
   // BEM Element
   &__element {}
 }
+
+// When defining styles in your classes start with the more general styles first
+.example-class {
+  display: block;
+  padding: 0 5px 0;
+  color: green;
+}
 ```
