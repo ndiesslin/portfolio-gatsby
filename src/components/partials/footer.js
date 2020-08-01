@@ -5,6 +5,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
+// Import documents
+import resume from "../../docs/resume.pdf"
+import documentation from "../../docs/documentation.pdf"
+
 const Footer = () => {
   var d = new Date();
   var n = d.getFullYear();
@@ -37,19 +41,14 @@ const Footer = () => {
               </Link>
             </li>
             <li class="margin-bottom-16 margin-left-24 display-inline-block">
-              <a href="docs/vCard.vcf" target="_blank">
-                vCard
-              </a>
-            </li>
-            <li class="margin-bottom-16 margin-left-24 display-inline-block">
-              <a href="docs/resume.pdf" target="_blank">
+              <Link to={resume}>
                 resume
-              </a>
+              </Link>
             </li>
             <li class="margin-bottom-16 margin-left-24 display-inline-block">
-              <a href="docs/documentation.pdf" target="_blank">
-                site documentation
-              </a>
+              <Link to={documentation}>
+                documentation
+              </Link>
             </li>
           </ul>
         </div>
