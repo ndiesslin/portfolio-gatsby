@@ -21,18 +21,15 @@ const PortfolioIndex = ({ data, location }) => {
       />
       <section class="margin-top-64">
         <div class="container container--small">
-          <div>
-            <h2 class="text-align-center">
-              <Link to="/blog">
-                Blog
-              </Link>
-            </h2>
-          </div>
-          <div>
+          <h2 class="text-align-center">
+            <Link to="/blog">
+              Blog
+            </Link>
+          </h2>
+          <hr/>
           <BlogList
             blogs={data.blogs.edges}
           />
-          </div>
         </div>
       </section>
     </Layout>
