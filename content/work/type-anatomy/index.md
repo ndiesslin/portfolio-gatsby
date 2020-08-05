@@ -5,7 +5,7 @@ description: 'Type Anatomy is a web project created to help students learn the a
 image_url: 'mockup.png'
 image_alt: 'Type Anatomy Website on computer, tablet, and phone.'
 link_1_copy: 'Visit Site'
-link_1_link: 'https://ndiesslin.com/type-anatomy/'
+link_1_link: 'https://typeanatomy.tk'
 link_document_copy: 'View Documentation'
 link_document_link: 'type-anatomy-documentation.pdf'
 ---
