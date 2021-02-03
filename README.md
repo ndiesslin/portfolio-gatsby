@@ -1,3 +1,3 @@
-# Pizza Man Website
+# Portfolio website
 
-This is the repo for the pizza man website, it's build with gatsby and hosted with firebase.
+This is the repo for my portfolio website, it's build with gatsby and hosted with firebase.
