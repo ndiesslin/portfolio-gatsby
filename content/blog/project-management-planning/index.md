@@ -49,7 +49,8 @@ I originally started understanding better tasks when working with team members w
 7. If you are able to, provide annotated screenshots, photographs, videos, or screen recordings to help provide any information that might not be clear
 8. If there is a deadline for the task it's helpful to provide a deadline that matches your timeline
 9. Sometimes it might be helpful to provide dialog in tasks to provide context, make sure this isn't what defines the task and this may only provide redundancy from the summary of the task
-10. You may create a main task for a larger project and sub tasks that are required to complete the main task, but each task should be siloed to complete the main task
+10. You may find it useful to create a main task or a way to group tasks for a larger project and sub tasks that are required to complete the main task or project, but each task should be siloed to complete the main task
+11. Priority levels are helpful to define the urgency and the ability to push off certain tasks if a higher priority task presents itself
 
 __TODO: Here is an example task:__
 

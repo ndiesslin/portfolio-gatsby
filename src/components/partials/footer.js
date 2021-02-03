@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer class="background-color-black">
       <div class="text-align-center padding-16">
-        <a class="social social--twitter" href="https://twitter.com/ndiesslin">
+        <a class="social social--twitter" href="https://twitter.com/pizzamannick">
           <span class="visuallyhidden">Twitter</span>
         </a>
         <a class="social social--linkedin" href="https://www.linkedin.com/in/nicholasdiesslin">
